@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path')
 const indexRouter = require('./router/indexRouter');
-
+//const detailRouter = require('./router/detailController');
 
 app.get('/', indexRouter);
+//app.get('/crear', detailRouter);
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
